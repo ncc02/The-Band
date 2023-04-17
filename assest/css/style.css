@@ -107,6 +107,7 @@ html {
     background-repeat: no-repeat;
     width: 100%;
     height: 100%;
+    /* filter: grayscale(50%); */
 }
 
 #slider .text {
@@ -127,6 +128,7 @@ html {
     width: 800px;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 50px;
 }
 
 #content .section-heading {
@@ -372,4 +374,102 @@ p.modal-help {
 
 .modal-help a{
     color: #2196F3;
+}
+
+.row{
+    width: 100%;
+    margin-left: -8px;
+    margin-right: -8px;
+    margin-bottom: 7px;
+}
+
+.col{
+    width: 100%;
+    float: left;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.col-half{
+    float: left;
+    width: 50%;
+}
+
+.col input{
+    width: 100%;
+    border: 1px solid #ccc;
+    font-size: 15px;
+    line-height: 1.4;
+}
+
+.contact-content{
+    margin-top: 48px;
+}
+.contact-info{
+    font-size: 18px;
+    line-height: 1.4;
+}
+
+.contact-info i{
+    width: 7%;
+}
+
+#contact-form .col input{
+    padding: 8px;
+    
+}
+
+.row::after{
+    content:"";
+    display: block;
+    clear: both;
+}
+
+.mt-16{
+    float:right;
+    padding: 10px 16px;
+    margin-right: 15px;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    margin-top: 10px;
+    font-size: 15PX;
+}
+
+.mt-16:hover{
+    cursor: pointer;
+    background-color: #ccc;
+    color: #000;
+
+}
+
+
+#content .section-heading.contact{
+    margin-top: -30px;
+}
+
+.map-section img{
+    width: 100%;
+    filter: grayscale(50%);
+}
+
+.w3-container{
+    padding-top: 64px!important;
+    padding-bottom: 64px!important;
+    text-align: center!important;
+    font-size: 24px;
+    opacity: 0.7;
+}
+
+.w3-container .w3-medium{
+    
+    font-size: 15px!important;
+    line-height: 1.5;
+    margin: 15px;
+}
+.w3-container .w3-medium a{
+    color: #000;
+}
+.w3-container .fa:hover{
+    opacity: 0.6    ;
 }
