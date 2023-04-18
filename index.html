@@ -5,8 +5,10 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>The Band</title>
+    <link rel="icon" href="/assest/img/icon.jpg" type="image/gif" sizes="16x16">
     <link rel="stylesheet" href="./assest/css/style.css" />
+    <link rel="stylesheet" href="./assest/css/responsive.css" />
     <!-- <link rel="stylesheet" href="./assest/fonts/themify-icons/themify-icons.css" /> -->
     <script src="https://kit.fontawesome.com/d2175be131.js" crossorigin="anonymous"></script>
 </head>
@@ -15,9 +17,9 @@
     <div id="main">
         <div id="header">
             <ul id="nav">
-                <li><a href="">Band</a></li>
-                <li><a href="">Tour</a></li>
                 <li><a href="">Home</a></li>
+                <li><a href="#band">Band</a></li>
+                <li><a href="">Tour</a></li>
                 <li><a href="">Contact</a></li>
                 <li>
                     <a href="#">More
@@ -33,10 +35,12 @@
                 </li>
             </ul>
             <i class="button-search fa-solid fa-magnifying-glass"></i>
+            <i class="mobile-menu-btn fa-solid fa-bars"></i>
         </div>
 
         <div id="slider">
-            <div class="image"></div>
+            <div class="image">
+            </div>
             <div class="text">
                 <h2 class="heading">New York</h2>
                 <p>The atmosphere in New York is lorem ipsum.</p>
@@ -44,7 +48,7 @@
         </div>
 
         <div id="content">
-            <div class="content-section">
+            <div id="band" class="content-section">
                 <h2 class="section-heading">THE BAND</h2>
                 <p class="section-sub-heading">We love music</p>
                 <p class="section-about">
@@ -193,7 +197,7 @@
             <i class="fa fa-pinterest-p w3-hover-opacity"></i>
             <i class="fa fa-twitter w3-hover-opacity"></i>
             <i class="fa fa-linkedin w3-hover-opacity"></i>
-            <p class="w3-medium">Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+            <p class="w3-medium">Powered by <a href="https://www.w3schools.com/w3css/default.asp" rel="noopener" target="_blank">w3.css</a></p>
           </footer>
     </div>
 
@@ -249,6 +253,22 @@
         }
 
         close.addEventListener('click', hideBuyTickets)
+
+        var header = document.getElementById('header');
+        console.log(header)
+        const mobileMenu = document.querySelector('.mobile-menu-btn')
+        console.log(mobileMenu)
+
+        function showMenu() {
+            var isClose = header.clientHeight === 46;
+            if (isClose){
+                header.style.height = 'auto';
+            }
+            else{
+                header.style.height = '46px';
+            }
+        }
+        mobileMenu.addEventListener('click', showMenu)
     </script>
 </body>
 

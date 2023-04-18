@@ -1,0 +1,42 @@
+@media(min-width:740px) and (max-width:1023px){
+    #content {
+        padding: 60px 20px;
+        
+        max-width: 100%;
+        margin-bottom: 50px;
+    }    
+    .button-search{
+        margin-right: 20px;
+    }
+}
+
+@media(max-width:740px){
+    #nav li {
+        display: block;
+        position: relative;
+    }
+    
+    #header .button-search {
+        display: none;
+    }
+    
+    #header .mobile-menu-btn {
+        color: #fff;
+        /* display: inline-block; */
+        float: right;
+        line-height: 46px;
+        font-size: 17px;
+        padding: 0 20px;   
+    }
+
+    #header .mobile-menu-btn:hover {
+        background-color: #f44336;
+        cursor: pointer;
+    }
+    .open-menu{
+        height:230px; 
+    }
+    #slider{
+        min-height: 200px;
+    }
+}
