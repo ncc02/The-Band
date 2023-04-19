@@ -8,6 +8,14 @@
     .button-search{
         margin-right: 20px;
     }
+    .cotact-info{
+        padding-left: 25px;
+    }
+    .contact-info{
+        font-size: 18px;
+        line-height: 1.4;
+        padding-left:30px;
+    }
 }
 
 @media(max-width:740px){
