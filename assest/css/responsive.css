@@ -39,4 +39,33 @@
     #slider{
         min-height: 200px;
     }
+
+    #content .team .member {
+        display: block;
+        width: 100%;
+        /* margin-left: auto; */
+        /* margin-right: auto; */
+        margin-bottom: 60px;
+    }
+    #content{
+        padding-left: 30px;
+        padding-right: 30px;
+        
+    }
+    .place-item {
+        display: block;
+        width: 100%;
+        margin-bottom: 30px;
+        padding: 0px 7px;
+    }
+    .col-half{
+        width: 100%;
+    }
+    .row{
+        margin-left: 4px;
+    }
+    #contact-form{
+        margin-top: 20px;
+        margin-left: -20px;
+    }
 }
